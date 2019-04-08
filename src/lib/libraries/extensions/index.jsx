@@ -1,6 +1,9 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 
+import rikaIconURL from './rika/icon.png';
+import rikaInsetIconURL from './rika/icon-inset.svg';
+
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
 
@@ -39,6 +42,26 @@ import boostIconURL from './boost/boost.png';
 import boostInsetIconURL from './boost/boost-small.svg';
 
 export default [
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="理科"
+                description="Name for the 'Music' extension"
+                id="gui.extension.rika.name"
+            />
+        ),
+        extensionId: 'rika',
+        iconURL: rikaIconURL,
+        insetIconURL: rikaInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="ワニボード用の拡張機能です"
+                description="Description for the 'Music' extension"
+                id="gui.extension.rika.description"
+            />
+        ),
+        featured: true
+    },
     {
         name: (
             <FormattedMessage
